@@ -39,6 +39,14 @@ namespace HelloLearn
             string userInput = Console.ReadLine();
             Console.WriteLine("User input String: "+ userInput);
 
+            //Type Casting 
+            //There are 2 types of type casting
+               // 1. Implicit Casting: char to -> int to -> long to -> float to ->double
+               // 2. Explicit Type : 
+            int x = (int)3.5; // It is explicit cast
+            double y = x; // it is possible and it is implicit type
+            // int a = y not possible
+            Console.WriteLine(x);
 
             Console.ReadLine();
         }
