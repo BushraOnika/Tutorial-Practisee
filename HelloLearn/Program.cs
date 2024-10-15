@@ -203,16 +203,45 @@ namespace HelloLearn
               */
             // TryParse Function
             // int.TryParse(Console.ReadLine(), out num);
-           // Console.WriteLine(num);
+            // Console.WriteLine(num);
 
-               // Exercise Times Table
-            Console.WriteLine("Enter a number : ");
-             int num = Convert.ToInt32(Console.ReadLine());
-            // int num = 0;
+            // Exercise Times Table
+            /* Console.WriteLine("Enter a number : ");
+              int num = Convert.ToInt32(Console.ReadLine());
+             // int num = 0;
 
-            for (int i = 1; i <= 10; i++)
+             for (int i = 1; i <= 10; i++)
+             {
+                 Console.WriteLine("{0} x {1} = {2}", i,num, num * i);
+             }
+            */
+
+            /*
+             *  Create a for loop from 1 to X (15)
+             *  3 and 5 = FizzBuzz
+             *  3 = Fizz
+             *  5 = Buzz
+             *  else = number
+             *  
+             */
+            for (int i = 1; i <= 15; i++)
             {
-                Console.WriteLine("{0} x {1} = {2}", i,num, num * i);
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine("Number : {0}", i);
+                }
             }
 
 
