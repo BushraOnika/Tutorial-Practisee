@@ -86,21 +86,21 @@ namespace HelloLearn
             //int age = 23;
             //Console.WriteLine(age2++);
             //Console.WriteLine(age);
-           // Console.WriteLine(++age);
+            // Console.WriteLine(++age);
 
-           // age *= 20;
+            // age *= 20;
             //Console.WriteLine(age);
             //  
             //  // Remainder
             // int f1 = 21;
             // int f2 = 2;
-           // Console.WriteLine("Remiander :"+ (f1%f2));
+            // Console.WriteLine("Remiander :"+ (f1%f2));
             //  
             //  
             //  // var is a keyword which we can use to intialize any kind of datas
             //  var a = 5;
             //  var b = 5.2554F;
-           // var c = 25.455D;
+            // var c = 25.455D;
             //var d = "Ama";
             //  var e = 'a';
 
@@ -128,9 +128,9 @@ namespace HelloLearn
 
             // If else and switch cases conditional
 
-            Console.Write("Enter your age: ");
-            string tg= Console.ReadLine();
-            int age = Convert.ToInt32(tg);
+            //        Console.Write("Enter your age: ");
+            //      string tg= Console.ReadLine();
+            //    int age = Convert.ToInt32(tg);
             //    if(age <=2)
             //    {
             //        Console.WriteLine("You are just born");
@@ -147,22 +147,35 @@ namespace HelloLearn
             //    //   {
             //      Console.WriteLine("Enjoy");
             //  }
-            switch (age)
-            {
-                case 2: 
-                    Console.WriteLine("Not allowed");
-                    break;
-                case 18: 
-                    Console.WriteLine("you are allowed");
-                    break;
+            // switch (age)
+            //{
+            //  case 2: 
+            //    Console.WriteLine("Not allowed");
+            //  break;
+            //case 18: 
+            //  Console.WriteLine("you are allowed");
+            //break;
 
-                default: 
-                    Console.WriteLine("enjoy");
-                    break;
-                
+            //                default: 
+            //                  Console.WriteLine("enjoy");
+            //                break;
 
-            }  
 
+
+          //      for (int i = 0; i < 10; i++)
+           //    {
+           //        Console.WriteLine(i);
+           //    }
+           //    int a = 0;
+           //    while (a < 5)
+           //    {
+           //        Console.WriteLine(a);
+           //        a++;
+           //    }
+           //    do {
+            //      a++;
+            //      Console.WriteLine(a);
+           //    } while (a <= 5);
 
             Console.ReadLine();
 
