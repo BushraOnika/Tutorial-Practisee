@@ -52,35 +52,35 @@ namespace HelloLearn
 
 
             // Boolean datatypes
-            bool isMale = false;
-            Console.WriteLine(isMale);
-            bool isSale = true;
-            Console.WriteLine(isSale);
+            //  bool isMale = false;
+            // Console.WriteLine(isMale);
+            // bool isSale = true;
+            // Console.WriteLine(isSale);
 
 
 
 
             //  Converting string to numbers
-            string age1 = "-23";
-            int age2= Convert.ToInt32(age1);
-            Console.WriteLine(age2);
+            // string age1 = "-23";
+            // int age2= Convert.ToInt32(age1);
+            //  Console.WriteLine(age2);
 
-            string textBignum = "500000000";
-            long bigNum = Convert.ToInt64(textBignum);
-            Console.WriteLine(bigNum);
+            // string textBignum = "500000000";
+            // long bigNum = Convert.ToInt64(textBignum);
+            // Console.WriteLine(bigNum);
 
-            string textnegative = "-50000.256";
-            double bigNumNegative = Convert.ToDouble(textnegative);
-            Console.WriteLine(bigNumNegative);
+            // string textnegative = "-50000.256";
+            // double bigNumNegative = Convert.ToDouble(textnegative);
+            // Console.WriteLine(bigNumNegative);
 
-            string f = "25.2000015464";
-            float precision= Convert.ToSingle(f);
-            Console.WriteLine(precision);
+            // string f = "25.2000015464";
+            // float precision= Convert.ToSingle(f);
+            // Console.WriteLine(precision);
 
 
-            string mt = "8.25";
-            decimal m = Convert.ToDecimal(mt);
-            Console.WriteLine(m);
+            // string mt = "8.25";
+            // decimal m = Convert.ToDecimal(mt);
+            // Console.WriteLine(m);
 
 
             // Operators  + - * /
@@ -178,30 +178,42 @@ namespace HelloLearn
             //      Console.WriteLine(a);
             //    } while (a <= 5);
 
-                    //Numeric Formatting
-            double value = 1000 / 12.34D;
-            Console.WriteLine(value) ;
-            Console.WriteLine(string.Format("{0:0}" , value));
-            Console.WriteLine(string.Format("{0:0:0}",value));
-            Console.WriteLine(string.Format("{0:0.00}",value));
+            //Numeric Formatting
+            /*  double value = 1000 / 12.34D;
+              Console.WriteLine(value) ;
+              Console.WriteLine(string.Format("{0:0}" , value));
+              Console.WriteLine(string.Format("{0:0:0}",value));
+              Console.WriteLine(string.Format("{0:0.00}",value));
 
-            double money = -10D / 3D;
-            Console.WriteLine(money) ;
-            Console.WriteLine("$10 / $3 = ${0:0.00}",money);
-            Console.WriteLine(money.ToString("C"));
-            Console.WriteLine(money.ToString("C0"));
-            Console.WriteLine(money.ToString("C1"));
-            Console.WriteLine(money.ToString("C2"));
-            Console.WriteLine(money.ToString("C3"));
-
-
-            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-AU")));
+              double money = -10D / 3D;
+              Console.WriteLine(money) ;
+              Console.WriteLine("$10 / $3 = ${0:0.00}",money);
+              Console.WriteLine(money.ToString("C"));
+              Console.WriteLine(money.ToString("C0"));
+              Console.WriteLine(money.ToString("C1"));
+              Console.WriteLine(money.ToString("C2"));
+              Console.WriteLine(money.ToString("C3"));
 
 
+              Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
+              Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+              Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+              Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-AU")));
 
+              */
+            // TryParse Function
+            // int.TryParse(Console.ReadLine(), out num);
+           // Console.WriteLine(num);
+
+               // Exercise Times Table
+            Console.WriteLine("Enter a number : ");
+             int num = Convert.ToInt32(Console.ReadLine());
+            // int num = 0;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} x {1} = {2}", i,num, num * i);
+            }
 
 
             Console.ReadLine();
