@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -162,20 +163,46 @@ namespace HelloLearn
 
 
 
-          //      for (int i = 0; i < 10; i++)
-           //    {
-           //        Console.WriteLine(i);
-           //    }
-           //    int a = 0;
-           //    while (a < 5)
-           //    {
-           //        Console.WriteLine(a);
-           //        a++;
-           //    }
-           //    do {
+            //      for (int i = 0; i < 10; i++)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    int a = 0;
+            //    while (a < 5)
+            //    {
+            //        Console.WriteLine(a);
+            //        a++;
+            //    }
+            //    do {
             //      a++;
             //      Console.WriteLine(a);
-           //    } while (a <= 5);
+            //    } while (a <= 5);
+
+                    //Numeric Formatting
+            double value = 1000 / 12.34D;
+            Console.WriteLine(value) ;
+            Console.WriteLine(string.Format("{0:0}" , value));
+            Console.WriteLine(string.Format("{0:0:0}",value));
+            Console.WriteLine(string.Format("{0:0.00}",value));
+
+            double money = -10D / 3D;
+            Console.WriteLine(money) ;
+            Console.WriteLine("$10 / $3 = ${0:0.00}",money);
+            Console.WriteLine(money.ToString("C"));
+            Console.WriteLine(money.ToString("C0"));
+            Console.WriteLine(money.ToString("C1"));
+            Console.WriteLine(money.ToString("C2"));
+            Console.WriteLine(money.ToString("C3"));
+
+
+            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-AU")));
+
+
+
+
 
             Console.ReadLine();
 
